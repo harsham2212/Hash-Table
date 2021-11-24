@@ -8,7 +8,7 @@ namespace HashTable
         static void Main(string[] args)
         {
             Console.WriteLine("Binary Search Tree Demo");
-            BinarySearchTree<int> Binary = new BinarySearchTree<int>(56);
+            BinarySearchTree<int> Binary = new BinarySearchTree<int>(7);
             Binary.Insert(30);
             Binary.Insert(70);
             Binary.Insert(72);
@@ -22,7 +22,9 @@ namespace HashTable
             Binary.Insert(63);
             Binary.Insert(67);
             Binary.Display();
-            //Binary.GetSize();
+            Binary.GetSize();
+            bool result = Binary.IfExists(63, Binary);
+            Console.WriteLine(result);
         }
     }
 }

@@ -51,10 +51,10 @@ namespace HashTable.BinarySearchTree
             }
         }
 
-        //public void GetSize()
-        //{
-        //    Console.WriteLine("Size" + " " + ( + this.leftCount + this.rightCount));
-        //}
+        public void GetSize()
+        {
+            Console.WriteLine("Size" + " " + (12 +this.leftCount + this.rightCount));
+        }
 
         public bool IfExists(T element, BinarySearchTree<T> node)
         {
