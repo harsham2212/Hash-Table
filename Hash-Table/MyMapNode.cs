@@ -8,17 +8,21 @@ namespace HashTable
     {
         private readonly int size;
         private readonly LinkedList<KeyValue<K, V>>[] items;
+        
+        //Construrctor 
 
         public MyMapNode(int size)
         {
             this.size = size;
             this.items = new LinkedList<KeyValue<K, V>>[size];
         }
+
         protected int GetArrayPosition(K key)
         {
             int position = key.GetHashCode() % size;
             return Math.Abs(position);
         }
+
         public V Get(K key)
         {
             int position = GetArrayPosition(key);

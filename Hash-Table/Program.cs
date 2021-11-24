@@ -19,6 +19,7 @@ namespace HashTable
             Console.WriteLine("3th index Value:" + hash5);
             string hash2 = hash.Get("5");
             Console.WriteLine("5th index Value:" + hash2);
+            hash.Remove("2");
         }
     }
 }
